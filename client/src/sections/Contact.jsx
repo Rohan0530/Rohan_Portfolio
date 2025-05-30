@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post('https://rohan-portfolio-rd2j.onrender.com/contact', formData);
+      await axios.post('https://rohan-portfolio-rd2j.onrender.com/api/contact', formData);
       toast.success('Message sent successfully!');
       setDone(true);
       setFormData({ name: '', email: '', message: '' });
